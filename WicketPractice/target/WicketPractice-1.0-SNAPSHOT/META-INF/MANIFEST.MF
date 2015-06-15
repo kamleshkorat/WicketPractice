@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: Kamlesh Korat
+Built-By: kkorat
 Created-By: IntelliJ IDEA
 Build-Jdk: 1.6.0_45
 
