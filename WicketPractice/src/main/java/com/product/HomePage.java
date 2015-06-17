@@ -11,7 +11,7 @@ import java.util.TimeZone;
 
 public class HomePage extends WebPage {
 	private static final long serialVersionUID = 1L;
-	public static final String CONTENT_ID="contentComponent";
+	//public static final String CONTENT_ID="contentComponent";
 	private HeaderPanel headerPanel;
 	private MenuPanel menuPanel;
 	private FooterPanel footerPanel;
@@ -24,7 +24,7 @@ public class HomePage extends WebPage {
 		add(headerPanel);
 		add(footerPanel);
 		add(menuPanel);
-		add(new Label(CONTENT_ID,"Put your content here!"));
+		//add(new Label(CONTENT_ID,"Put your content here!"));
     }
 
 	public MenuPanel getMenuPanel() {

@@ -8,7 +8,6 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 public class SimpleLoginPage extends HomePage {
     public SimpleLoginPage(PageParameters parameters) {
         super(parameters);
-        replace(new LoginPanel(CONTENT_ID));
         getMenuPanel().setVisible(false);
     }
 }
