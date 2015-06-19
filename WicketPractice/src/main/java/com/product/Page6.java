@@ -13,7 +13,7 @@ public class Page6 extends HomePage {
         super(parameters);
         firstLabel=new Label("label","First Label");
         secondLabel=new Label("label","Second Label");
-
+        add(firstLabel);
     }
 
 }

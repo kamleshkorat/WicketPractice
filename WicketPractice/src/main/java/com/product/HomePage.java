@@ -16,6 +16,7 @@ public class HomePage extends WebPage {
 	private MenuPanel menuPanel;
 	private FooterPanel footerPanel;
 
+
 	public HomePage(final PageParameters parameters) {
 		super(parameters);
 		headerPanel=new HeaderPanel("headerPanel","Apache Organization");

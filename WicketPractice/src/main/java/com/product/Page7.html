@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <wicket:extend>
+        <a href="#" wicket:id="mylink6">Go to Page6</a>
+        <a href="#" wicket:id="mylink3">Go to Page3</a><br/>
+        <br/>
+        <br/>
+        <wicket:link>
+            <a href="Page7.html">Go to Page6 using Wicket Link tag</a><br/>
+            <a href="Page5.html">Go to Page5 using Wicket Link tag</a><br/>
+            <a href="Page4.html">Go to Page4 using Wicket Link tag</a><br/>
+            <a href="Page3.html">Go to Page3 using Wicket Link tag</a><br/>
+            <a href="Page2.html">Go to Page2 using Wicket Link tag</a><br/>
+        </wicket:link>
+        <br/>
+        Current Time:<span wicket:id="datetime"></span>
+        <br/>
+        Full Name:<span wicket:id="fullname">Model</span>
+        <br/>
+        Spouse Name:<span wicket:id="fname">PropertyModel</span>
+        <br/>
+        Full Name:<span wicket:id="name">CompoundPropertyModel</span>
+        <br/>
+        Spouse Name:<span wicket:id="spouse.name">CompoundPropertyModel</span>
+    </wicket:extend>
+</body>
+</html>

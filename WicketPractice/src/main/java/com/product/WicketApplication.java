@@ -1,7 +1,10 @@
 package com.product;
 
+import org.apache.wicket.core.request.mapper.CryptoMapper;
+import org.apache.wicket.core.request.mapper.MountedMapper;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
+import org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoder;
 
 /**
  * Application object for your web application.
@@ -17,7 +20,7 @@ public class WicketApplication extends WebApplication
 	@Override
 	public Class<? extends WebPage> getHomePage()
 	{
-		return Page5.class;
+		return Page9.class;
 	}
 
 	/**
@@ -27,6 +30,10 @@ public class WicketApplication extends WebApplication
 	public void init()
 	{
 		super.init();
+		setRootRequestMapper(new CryptoMapper(getRootRequestMapper(),this));
+
+		mountPage("/page3/",Page3.class);
+		mountPage("/resister/",Page8.class);
 
 		// add your configuration here
 	}
