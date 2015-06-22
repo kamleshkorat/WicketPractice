@@ -6,7 +6,21 @@
 </head>
 <body>
 <wicket:extend>
-        Select OS:<select wicket:id="myList"></select>
+        <h3 wicket:id="greetingMessage" style="text-align: center"></h3>
+        <wicket:message key="greetingMessage"></wicket:message>
+        Select OS: <select wicket:id="myList"></select>
+
+    <br/>
+    <br/>
+
+        <a wicket:id="alink">Ajax Link</a>
+    <br/>
+
+    <p wicket:id="msg"></p>
+    <br/>
+    <br/>
+    <a wicket:id="openWindow">Open a new Window!</a>
+    <div wicket:id="modalWindow"></div>
 </wicket:extend>
 </body>
 </html>

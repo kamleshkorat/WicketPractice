@@ -3,6 +3,11 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="WicketPractice-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="WicketPractice:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="wicket-extensions-6.19.0" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
